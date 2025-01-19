@@ -1,0 +1,100 @@
+/* Full-screen background with centering */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/AuthImg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+/* Form card styling */
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    margin: 500px;
+}
+
+
+/* Form title */
+
+.auth-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4ea2cc;
+}
+
+
+/* Input fields */
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+/* Buttons */
+
+.auth-card button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #4ea2cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.auth-card button:hover {
+    background-color: #0e3b52;
+}
+
+
+/* Toggle button for login/signup */
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #4ea2cc;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 600px) {
+    .auth-card {
+        width: 90%;
+        padding: 20px;
+    }
+    .auth-card h2 {
+        font-size: 20px;
+    }
+    .auth-card button,
+    .auth-card input {
+        font-size: 14px;
+    }
+}
